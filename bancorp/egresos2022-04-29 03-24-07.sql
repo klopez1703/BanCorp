@@ -1,0 +1,12 @@
+Select COD_EGRESO, NOM_INGRESO, VALOR_INGRESO, FECHA_INGRESO from bancorp.egresos
+USE bancorp;
+
+CREATE TABLE `egresos` (
+  `COD_EGRESO` bigint(20) NOT NULL AUTO_INCREMENT,
+  `NOM_INGRESO` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `VALOR_INGRESO` int(11) NOT NULL,
+  `FECHA_INGRESO` datetime DEFAULT NULL,
+  PRIMARY KEY (`COD_EGRESO`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+

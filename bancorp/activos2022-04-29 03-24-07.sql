@@ -1,0 +1,12 @@
+Select COD_ACTIVO, NOM_ACTIVO, VALOR_ACTIVO, FECHA_ACTIVO from bancorp.activos
+USE bancorp;
+
+CREATE TABLE `activos` (
+  `COD_ACTIVO` bigint(20) NOT NULL AUTO_INCREMENT,
+  `NOM_ACTIVO` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `VALOR_ACTIVO` int(11) NOT NULL,
+  `FECHA_ACTIVO` datetime DEFAULT NULL,
+  PRIMARY KEY (`COD_ACTIVO`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+

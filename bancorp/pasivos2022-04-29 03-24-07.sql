@@ -1,0 +1,12 @@
+Select COD_PASIVO, NOM_PASIVO, VALOR_PASIVO, FECHA_PASIVO from bancorp.pasivos
+USE bancorp;
+
+CREATE TABLE `pasivos` (
+  `COD_PASIVO` bigint(20) NOT NULL AUTO_INCREMENT,
+  `NOM_PASIVO` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `VALOR_PASIVO` int(11) NOT NULL,
+  `FECHA_PASIVO` datetime DEFAULT NULL,
+  PRIMARY KEY (`COD_PASIVO`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
